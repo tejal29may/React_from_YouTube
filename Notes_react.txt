@@ -1,0 +1,52 @@
+
+
+React Js : By Chai aur Code  
+Date : 1 Feb 2024
+
+Day1: 
+-> how to install react js by using vite  and by usning react vite take less tiem as it is light weighted .
+-> we have to delete unwanted files in side the already generated code.using vite react main file created is main.jsx which is in src folder .
+
+Day 2 : 
+-> next day we have learned about component in react that is how to create function in react and render it .
+-> Function name should always be in capital case. 
+-> You can return only one element but you can wrap in single element like <div> o just <></> and inside that you can write more here.
+
+Day 3: Custom React 
+const username="tejal"  => <p>{username}</p> this curly braces takes the variable and it called as evaluation expression or evaluated expression
+
+Day 4 : why we need Hooks?
+-> React controls the UI Updattation
+-> 1st we need to import hooks using import {hookname ie.useState} from 'react'
+-> in code u can store this hokk  in a variable and it return us two values in the form of values . ie. let [index0value, function]=useState(10) like let [counter, setCounter]=useState(10) // 10 is the initial value u want to set.
+-> function controls the counter variable 
+-> used to propogate changes
+
+Day 5: Virtual DOM,Fibre,reconcilliation
+Date : 03/02/2024
+
+-> in React CreateRoot it creates a DOM Like Structure
+-> Fibre is the algorithm used to update the virtual DOM
+-> In UI it is not neccesary to update the changes immediately it is wasteful
+-> reconcilliation : It is the React algorithm which recosider the element which should be updated.
+-> It is used to differenciated the React DOM with DOM Tree which part needs to be changed.
+-> it is also known as Virtual DOM.
+-> Update : A change in the data used to render the react App.
+-> Reconciliation is the algorithm behind what is popularly understood as the "virtual DOM." A high-level description goes something like this: when you render a React application, a tree of nodes that describes the app is generated and saved in memory. This tree is then flushed to the rendering environment — for example, in the case of a browser application, it's translated to a set of DOM operations. When the app is updated (usually via setState), a new tree is generated. The new tree is diffed with the previous tree to compute which operations are needed to update the rendered app.
+-> Although Fiber is a ground-up rewrite of the reconciler, the high-level algorithm described in the React docs will be largely the same.
+ The key points are:
+Different component types are assumed to generate substantially different trees. React will not attempt to diff them, but rather replace the old tree completely.
+Diffing of lists is performed using keys. Keys should be "stable, predictable, and unique."
+-> Primary Goals Of Fibre
+-> pause work and come back to it later.
+->assign priority to different types of work.
+->reuse previously completed work.
+->abort work if it's no longer needed.
+
+Day 6 : Tailwind and Props in React              //here the basic topics end in react
+-> props make the component reusable 
+
+Day 7 : small project on background color changer
+-> we use useState hook for changing background color of body
+
+
